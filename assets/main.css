@@ -7,6 +7,20 @@
   --font-secondary: "Work Sans", sans-serif;
 }
 
+<style>
+  /* Define your regular styles here */
+
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .contact-heading {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-details {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+</style>
 /* Colors */
 :root {
   --color-default: #364d59;
