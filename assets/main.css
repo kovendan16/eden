@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ffc732;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -61,24 +61,10 @@ h6 {
 .appointment-form {
   background: rgba(6, 163, 218, 0.7);
 }
-
-  /* Define your regular styles here */
-
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    .contact-heading {
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .contact-details {
-      font-size: 14px; /* Adjust font size for smaller screens */
-    }
-  }
-<
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: #006699;
+  background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;
 }
@@ -245,11 +231,15 @@ h6 {
     height: 160vh;
   }
 }
-
+.accordion-item .accordion-header-custom button {
+  background-color: #b993d6 !important;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 102, 153, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .navbar-light .navbar-nav .nav-link {
   font-family: "Jost", sans-serif;
   padding: 35px 15px;
@@ -258,7 +248,12 @@ h6 {
   outline: none;
   transition: 0.5s;
 }
+.navbar-toggler
+{border: 2px solid #006699;}
 
+
+.navbar-toggler:hover
+{border: 2px solid #006699;}
 .sticky-top.navbar-light .navbar-nav .nav-link {
   padding: 20px 15px;
 }
@@ -354,7 +349,6 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -592,7 +586,7 @@ section {
 .constructions .card-item p {
   color: var(--color-secondary);
   margin: 0;
-}
+  text-align: justify;}
 
 /*--------------------------------------------------------------
 # Services Section
@@ -601,6 +595,27 @@ section {
   padding: 40px;
   background: #fff;
   height: 100%;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 999;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
 
 .services .service-item .icon {
